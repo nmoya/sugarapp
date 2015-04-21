@@ -17,6 +17,8 @@ class AddViewController: UIViewController {
     weak var delegate: AddViewControllerDelegate?
     
     @IBAction func confirmAdditionButton(sender: AnyObject) {
+
+        println("Hello world");
         
         delegate?.AddViewControllerDidTouchConfirmation(100, sender: sender);
     }
@@ -30,6 +32,10 @@ class AddViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+//    override func prepareForSegue(segue: UIStoryboardSegue?, sender: AnyObject?) {
+//        println("AddViewController.swift")
+//    }
     
 
 }

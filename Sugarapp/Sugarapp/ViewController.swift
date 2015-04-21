@@ -16,19 +16,28 @@ class ViewController: UIViewController, AddViewControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+
+        self.amount = 0;
+        totalSugarLabel.text = String(arc4random());
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    // Delegates
     
+    override func prepareForSegue(segue: UIStoryboardSegue?, sender: AnyObject?) {
+        println("ViewController.swift segue");
+        let vc = segue?.destinationViewController as AddViewController
+        vc.delegate = self
+    }
+
     func AddViewControllerDidTouchConfirmation(sugarAmount: Int, sender: AnyObject) {
-        amount += sugarAmount;
-        var str = String(amount);
-        totalSugarLabel.text = str;
+        self.amount += sugarAmount;
+        var str = String(self.amount);
+        dispatch_async(dispatch_get_main_queue(), {
+            self.totalSugarLabel.text = str;
+        })
     }
 
 }
