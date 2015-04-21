@@ -8,8 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, AddViewControllerDelegate {
 
+    @IBOutlet weak var totalSugarLabel: UILabel!
+    var amount = 0;
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +23,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    // Delegates
+    
+    func AddViewControllerDidTouchConfirmation(sugarAmount: Int, sender: AnyObject) {
+        amount += sugarAmount;
+        var str = String(amount);
+        totalSugarLabel.text = str;
+    }
 
 }
 

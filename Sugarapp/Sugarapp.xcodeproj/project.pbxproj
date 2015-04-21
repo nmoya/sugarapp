@@ -14,6 +14,7 @@
 		B84168BD1AE6C48600CBBF2B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B84168BC1AE6C48600CBBF2B /* Images.xcassets */; };
 		B84168C01AE6C48600CBBF2B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B84168BE1AE6C48600CBBF2B /* LaunchScreen.xib */; };
 		B84168CC1AE6C48600CBBF2B /* SugarappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84168CB1AE6C48600CBBF2B /* SugarappTests.swift */; };
+		B84168D61AE6D0BC00CBBF2B /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84168D51AE6D0BC00CBBF2B /* AddViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		B84168C51AE6C48600CBBF2B /* SugarappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SugarappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B84168CA1AE6C48600CBBF2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B84168CB1AE6C48600CBBF2B /* SugarappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SugarappTests.swift; sourceTree = "<group>"; };
+		B84168D51AE6D0BC00CBBF2B /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			children = (
 				B84168B21AE6C48600CBBF2B /* AppDelegate.swift */,
 				B84168B71AE6C48600CBBF2B /* ViewController.swift */,
+				B84168D51AE6D0BC00CBBF2B /* AddViewController.swift */,
 				B84168B91AE6C48600CBBF2B /* Main.storyboard */,
 				B84168BC1AE6C48600CBBF2B /* Images.xcassets */,
 				B84168BE1AE6C48600CBBF2B /* LaunchScreen.xib */,
@@ -217,6 +220,7 @@
 			files = (
 				B84168B81AE6C48600CBBF2B /* ViewController.swift in Sources */,
 				B84168B61AE6C48600CBBF2B /* Sugarapp.xcdatamodeld in Sources */,
+				B84168D61AE6D0BC00CBBF2B /* AddViewController.swift in Sources */,
 				B84168B31AE6C48600CBBF2B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
