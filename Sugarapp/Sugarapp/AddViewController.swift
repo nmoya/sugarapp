@@ -17,25 +17,16 @@ class AddViewController: UIViewController {
     weak var delegate: AddViewControllerDelegate?
     
     @IBAction func confirmAdditionButton(sender: AnyObject) {
-
-        println("Hello world");
-        
         delegate?.AddViewControllerDidTouchConfirmation(100, sender: sender);
+//        NSNotificationCenter.defaultCenter().postNotificationName("AddInt", object: 100)
+        dismissViewControllerAnimated(Bool(true), completion: nil)
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-    
-//    override func prepareForSegue(segue: UIStoryboardSegue?, sender: AnyObject?) {
-//        println("AddViewController.swift")
-//    }
-    
-
 }
